@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5175","Display errors when the form is submitted empty","GiantRocketship","Mon Nov 17 18:12:55 UTC 2025","passed","Mon Nov 17 18:13:01 UTC 2025","Contact Us","src/features/contactUs.feature.spec.js","",""
+"","4270","Display errors when only the name is provided","GiantRocketship","Mon Nov 17 18:12:55 UTC 2025","passed","Mon Nov 17 18:13:00 UTC 2025","Contact Us","src/features/contactUs.feature.spec.js","",""
+"","6771","Display error when name and email are provided without a comment","GiantRocketship","Mon Nov 17 18:13:00 UTC 2025","passed","Mon Nov 17 18:13:07 UTC 2025","Contact Us","src/features/contactUs.feature.spec.js","",""
