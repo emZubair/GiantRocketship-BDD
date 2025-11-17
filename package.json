@@ -1,0 +1,50 @@
+{
+    "name": "playwright-cucumber",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx bddgen && npx playwright test",
+        "headed:test": "npx bddgen && npx playwright test --headed",
+        "html:test": "npx bddgen && npx playwright test --reporter=html",
+        "show:html:report": "npx playwright show-report",
+        "allure": "npx bddgen && npx playwright test --reporter=allure-playwright",
+        "serve:allure": "allure generate allure-results -o allure-report --clean && allure open allure-report",
+        "lint": "eslint '**/*.ts'",
+        "lint:fix": "eslint '**/*.ts' --fix",
+        "format": "prettier --write .",
+        "lint-staged": "lint-staged --no-inline",
+        "bdd": "npx bddgen && npx playwright test"
+    },
+    "lintStaged": {
+        "**/*.ts": [
+            "tsc-files --noEmit"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "prettier --write ."
+        }
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@cucumber/cucumber": "^10.9.0",
+        "@playwright/test": "^1.48.2",
+        "@types/node": "^22.10.2",
+        "@typescript-eslint/eslint-plugin": "^8.16.0",
+        "@typescript-eslint/parser": "^8.16.0",
+        "allure-commandline": "^2.34.0",
+        "allure-js-commons": "^3.0.0-beta.11",
+        "allure-playwright": "^3.0.0-beta.11",
+        "dotenv": "^16.4.5",
+        "eslint": "^9.15.0",
+        "eslint-plugin-playwright": "^1.6.2",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "playwright-bdd": "^7.3.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.9.2"
+    }
+}
